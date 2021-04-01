@@ -71,15 +71,15 @@ const BodyEditor = (props) => {
                   index={index}
                 >
                   {(provided) => (                    
-                      <View
-                        as="div"
-                        elementRef={provided.innerRef}
+                      <div
+                        ref={provided.innerRef}
                         {...provided.draggableProps}
-                        {...provided.dragHandleProps}
-                        padding="x-small"
+                        {...provided.dragHandleProps}                        
                       >
+                        <View padding="xxx-small" as="div">
                         {createItem(item, handleChange, handleRemove)}
-                      </View>
+                        </View>
+                      </div>
                   )}
                 </Draggable>
               ))}
