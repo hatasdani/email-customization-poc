@@ -77,7 +77,7 @@ const BodyEditor = (props) => {
                         {...provided.dragHandleProps}                        
                       >
                         <View padding="xxx-small" as="div">
-                        {createItem(item, handleChange, handleRemove)}
+                         {createItem(item, handleChange, handleRemove)}
                         </View>
                       </div>
                   )}
